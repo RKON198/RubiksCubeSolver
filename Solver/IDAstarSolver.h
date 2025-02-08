@@ -13,6 +13,7 @@
 template<typename T, typename H>
 class IDAstarSolver {
 private:
+    // Korf's Astar
     CornerPatternDatabase cornerDB;
     vector<RubiksCube::MOVE> moves;
     unordered_map<T, RubiksCube::MOVE, H> move_done;
